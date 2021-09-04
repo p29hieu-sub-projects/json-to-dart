@@ -1,0 +1,24 @@
+﻿{
+  "manifest_version": 3,
+  "name": "JSON to Dart",
+  "author": "p29hieu",
+  "version": "0.0.1",
+  "description": "Convert Json data to Dart code",
+  "action": {
+    "default_icon": {
+      "16": "images/icon.png",
+      "24": "images/icon.png",
+      "32": "images/icon.png"
+    },
+    "default_title": "JSON to Dart Extension",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "permissions": [
+    "clipboardRead"
+  ]
+}

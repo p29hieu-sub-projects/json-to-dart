@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./styles/page.css" />
+    <title>JSON to Dart Extension</title>
+  </head>
+  <body style="min-width: 700px">
+    <div class="wrapper">
+      <h1>JSON to Dart Extension</h1>
+    </div>
+    <div id="example"></div>
+    <div style="display: flex; width: 100%">
+      <div style="flex: 1">
+        <div style="height: 80px">
+          <div>Enter the Json code here:</div>
+          <button type="menu" id="btnFormat">Format</button>
+          <div id="error"></div>
+        </div>
+        <div style="width: 100%">
+          <textarea
+            id="jsonInput"
+            style="max-width: 100%"
+            rows="20"
+            cols="50"
+            placeholder="input json here"
+          ></textarea>
+        </div>
+      </div>
+      <div style="flex: 1">
+        <div style="height: 80px">
+          <div style="display: flex; flex-direction: row">
+            <input id="inputClassName" placeholder="Class Name" /><button
+              id="btnConvert"
+            >
+              Convert
+            </button>
+          </div>
+          <div id="optionsConvert" style="display: none">
+            <input type="checkbox" id="nullable" name="nullable" checked />
+            <label for="nullable"> Field is Nullable</label>
+            |
+            <input
+              type="checkbox"
+              id="includeExample"
+              name="includeExample"
+              checked
+            />
+            <label for="includeExample">Include example </label>
+            |
+            <input
+              type="checkbox"
+              id="includeConstructor"
+              name="includeConstructor"
+              checked
+            />
+            <label for="includeConstructor">Include `constructor` </label>
+            |
+            <input type="checkbox" id="sortKey" name="sortKey" />
+            <label for="sortKey">Sort key json</label>
+            <br />
+          </div>
+        </div>
+        <div id="dataConvertedContainer" style="display: none">
+          <textarea
+            id="textConverted"
+            style="max-width: 100%"
+            rows="20"
+            cols="50"
+            placeholder="input json here"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./scripts/popup.js"></script>
+  </body>
+</html>
